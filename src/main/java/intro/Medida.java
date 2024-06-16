@@ -10,9 +10,16 @@ public class Medida {
     // Métodos e Funções
     public static void main(String[] args){
 
-        calcularAreaLonga();
-        calcularAreaCompacta();
+        //Estrutura condicional = verificar condição
 
+        String modo = "compacta";
+
+        if (modo == "compacta"){
+            calcularAreaCompacta();
+        }
+        else{
+            calcularAreaLonga();
+        }
     }
     public static void calcularAreaLonga(){
         System.out.println("Bom dia!");
