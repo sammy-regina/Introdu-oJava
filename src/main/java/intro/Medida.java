@@ -9,15 +9,36 @@ public class Medida {
 
     // Métodos e Funções
     public static void main(String[] args){
+        //Estrutura condicional switch = seleciona o comportamento do programa de acordo com escolha da pessoa
+        String opcao = "ifSimples";
 
+        switch (opcao){
+            case "ifSimples":
+                System.out.println("Você escolheu executar o método ifSimples!");
+                ifSimples();
+                break;
+            case "compacta":
+                System.out.println("Você escolheu executar o método compacta!");
+                calcularAreaCompacta();
+                break;
+            case "longa":
+                System.out.println("Você escolheu executar o método longa!");
+                calcularAreaLonga();
+                break;
+            default:
+                System.out.println("Escolha um valor válido!");
+                break;
+        }
+    }
+    public static void ifSimples() {
         //Estrutura condicional = verificar condição
 
         String modo = "compacta";
 
-        if (modo == "compacta"){
+        if (modo == "compacta") {
             calcularAreaCompacta();
         }
-        else{
+        else {
             calcularAreaLonga();
         }
     }
