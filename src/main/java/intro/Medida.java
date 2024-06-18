@@ -3,12 +3,18 @@ package intro;
 
 // Referencia a Bibliotecas
 
+import java.util.Scanner;
+
 //Classe
 public class Medida {
     // Atributos - Características
 
     // Métodos e Funções
     public static void main(String[] args){
+
+        // Utilizando classe scanner do Java para ler a escolha do usuário no console
+        Scanner scanner;
+
         //Estrutura condicional switch = seleciona o comportamento do programa de acordo com escolha da pessoa
         String opcao = "ifSimples";
 
