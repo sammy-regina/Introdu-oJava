@@ -13,21 +13,28 @@ public class Medida {
     public static void main(String[] args){
 
         // Utilizando classe scanner do Java para ler a escolha do usuário no console
-        Scanner scanner;
+        // objeto scanner = poderes da classe Scanner (System.in é a entrada do teclado)
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("-----  OPÇÕES  ----- ");
+        System.out.println("c - Calcular Area Compacta: ");
+        System.out.println("l - Calcular Area Modo Longo: ");
+        System.out.println("i - Calcular IfSimples: ");
+        System.out.println("Digite a opção desejada: ");
+        String opcao = scanner.next();
 
         //Estrutura condicional switch = seleciona o comportamento do programa de acordo com escolha da pessoa
-        String opcao = "ifSimples";
+        //String opcao = "ifSimples";
 
         switch (opcao){
-            case "ifSimples":
+            case "i":
                 System.out.println("Você escolheu executar o método ifSimples!");
                 ifSimples();
                 break;
-            case "compacta":
+            case "c":
                 System.out.println("Você escolheu executar o método compacta!");
                 calcularAreaCompacta();
                 break;
-            case "longa":
+            case "l":
                 System.out.println("Você escolheu executar o método longa!");
                 calcularAreaLonga();
                 break;
