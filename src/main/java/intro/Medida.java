@@ -112,7 +112,7 @@ public class Medida {
         //Laços de repetições
         //for = repetição incondicional
         System.out.println("contagem Regressiva");
-        for (int numero = 10; numero >= 0; numero --){
+        for (int numero = 10; numero > -1; numero --){
             System.out.println(numero);
         }
     }
